@@ -1,0 +1,12 @@
+.SearchListItem {
+    width: 80px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 8px;
+}
+.SearchListItem img {
+    width: 80px;
+    height: 80px;
+}

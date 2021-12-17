@@ -1,0 +1,9 @@
+.SearchList {
+    width: 480px;
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+}
