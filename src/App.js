@@ -1,16 +1,24 @@
-import React,{Component} from "react";
-// import TodoList from './components/TodoList'
+import React, {Component} from "react";
+import {Link, Route, NavLink, Switch, Redirect} from "react-router-dom";
+import About from "./components/About";
+import Home from "./components/Home";
 import './App.css'
-import Search from "./components/Search";
-// import AxiosDemo from "./components/AxiosDemo";
 // 创建并暴露App组件
-export default class App extends Component{
+export default class App extends Component {
   render() {
     return (
       <div className="App">
-        {/*<TodoList/>*/}
-        {/*<AxiosDemo/>*/}
-        <Search/>
+        {/* 编写路由连接 */}
+        <NavLink to="/about">About</NavLink> <br/>
+        <NavLink to="/home">Home</NavLink> <br/>
+        <div>
+          {/* 注册路由 */}
+          <Switch>
+            <Route path="/about" component={About}/>
+            <Route path="/home" component={Home}/>
+            <Redirect to="/about"/>
+          </Switch>
+        </div>
       </div>
     )
   }
