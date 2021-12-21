@@ -6,7 +6,7 @@ class About extends Component {
   render() {
     return (
       <div>
-        About 组件内容  更新内容 测试
+        About 组件内容  更新内容 测试 我是 Jenkins 自动化构建部署的
         <Button>按钮才</Button>
         <Button type="primary">按钮才</Button>
       </div>
